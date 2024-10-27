@@ -1,0 +1,111 @@
+/* Set the base font for the body */
+body {
+    font-family: 'Mulish';
+    background-color: #ffffff; /* White base color */
+    color: #333333; /* Dark grey text color */
+    margin: 0;
+}
+
+/* Navigation bar brand */
+.navbar-brand {
+    font-weight: bold;
+    color: #333333 !important; /* Dark red */
+}
+
+
+/* Navigation links */
+.navbar-nav .nav-link {
+    color: #333333;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #333333 !important; /* Dark red on hover or active */
+}
+
+/* Header titles (e.g., h1, h2) */
+h1, h2, h3, h4, h5, h6 {
+    color: #333333; /* Dark red */
+    font-family: 'Mulish';
+}
+
+/* Other text titles (e.g., card titles) */
+.card-title,
+.section-title {
+    color:#333333; /* Dark red */
+    font-weight: bold;
+}
+
+/* Body text */
+p, li, span, a {
+    color: #333333; /* Dark grey */
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #333333; /* Dark grey text */
+}
+
+/* Footer links */
+footer a {
+    color: #333333;
+}
+
+footer a:hover {
+    color:  #333333;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #8B0000;
+    border-color: #8B0000;
+    color: #ffffff; /* White text */
+}
+
+.btn-primary:hover {
+    background-color: #A52A2A;
+    border-color: #A52A2A;
+}
+
+/* Links in body text */
+a {
+    color: #8B0000;
+}
+
+a:hover {
+    color: #A52A2A;
+    text-decoration: none;
+}
+
+/* Ribbon style */
+.ribbon {
+    font-family: "Mulish";
+    background-color: #ffffff; /* White background */
+    color: #8B0000; /* Dark red text */
+    font-style: normal;
+    font-weight: 200;
+    padding: 10px 0;
+    font-size: 36px; /* Increase font size */
+}
+
+.carousel-caption {
+    position: static;
+    padding-top: 10px;
+    color: #333333; /* Dark grey text color */
+}
+
+.call-to-action {
+    font-family: "Mulish";
+    background-color: #ffffff; /* White background */
+    color: #8B0000; /* Dark red text */
+    font-style: normal;
+    font-weight: 200;
+    padding: 10px 0;
+    font-size: 36px; /* Increase font size */
+}
+
+.rounded-corners {
+    border-radius: 10px;
+}
