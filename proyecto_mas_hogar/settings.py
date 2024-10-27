@@ -18,6 +18,13 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 
+cloudinary.config(
+    cloud_name='dkr8kjavi',
+    api_key='438767119697134',
+    api_secret='ZAOQyrQv-pyCFjiBCqGad4hKq8k',
+    secure=True
+)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -132,6 +139,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': "dkr8kjavi",
