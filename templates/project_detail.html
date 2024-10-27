@@ -11,7 +11,7 @@
         {% for image in project.images.all %}
         <div class="col-md-4 mb-4">
             <!-- Use Cloudinary to generate a thumbnail dynamically -->
-            <img src="{{ image.image.url|cloudinary_thumbnail:800:600 }}" class="img-fluid rounded-corners" alt="{{ project.title }}">
+            <img src="{{ image.image.url|cloudinary_thumbnail:400,400 }}" class="img-fluid rounded-corners" alt="{{ project.title }}">
         </div>
         {% endfor %}
     </div>
