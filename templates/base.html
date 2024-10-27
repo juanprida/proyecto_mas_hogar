@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Proyecto + Hogar{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Ribbon -->
+    <div class="ribbon text-center py-2 sticky-top">
+        Proyecto + Hogar | Estudio Prida Ventresca
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light flex-column">
+        <div class="container">
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+                        <a class="nav-link" href="{% url 'home' %}">Inicio</a>
+                    </li>
+                    <li class="nav-item {% if request.path == '/portfolio/' %}active{% endif %}">
+                        <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+                    </li>
+                    <li class="nav-item {% if request.path == '/servicios/' %}active{% endif %}">
+                        <a class="nav-link" href="{% url 'services' %}">Servicios</a>
+                    </li>
+                    <li class="nav-item {% if request.path == '/sobre-nosotros/' %}active{% endif %}">
+                        <a class="nav-link" href="{% url 'about_us' %}">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Call-to-Action Section -->
+    <div class="ribbon my-5 text-center">
+        ¿Listo para dar el siguiente paso?
+        <h5>Contáctanos hoy mismo y descubri cómo podemos ayudarte a alcanzar tus metas.</h5>
+    </div>
+    <!-- Footer -->
+    <footer class="container mt-5 text-center">
+        <p>gabriela.ventresca@gmail.com</br> 011 57007011</br> &copy; Proyecto + Hogar | Estudio Prida Ventresca</p>
+        <div>
+            <a href="https://www.instagram.com/proyectomashogar" target="_blank" class="text-dark mr-3" aria-label="Instagram">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="mailto:gabriela.ventresca@gmail.com" class="text-dark mr-3" aria-label="Email">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/juan-carlos-prida-00a3a12a/" target="_blank" class="text-dark" aria-label="LinkedIn">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

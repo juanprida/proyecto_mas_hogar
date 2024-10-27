@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Portfolio - Proyecto + Hogar{% endblock %}
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-5">Nuestro Portfolio</h1>
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <a href="{% url 'project_detail' project.id %}">
+                {% if project.images.first.thumbnail %}
+                <img src="{{ project.images.first.thumbnail.url }}" class="img-fluid rounded-corners" alt="{{ project.title }}">
+                {% else %}
+                <img src="{{ project.images.first.image.url }}" class="img-fluid rounded-corners" alt="{{ project.title }}">
+                {% endif %}
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

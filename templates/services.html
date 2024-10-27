@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Servicios - Proyecto + Hogar{% endblock %}
+
+{% block content %}
+<!-- Services Section -->
+<div class="container my-3">
+    <!-- Single Image on Top -->
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <img src="{% static 'images/buenos_aires2.jpg' %}" class="img-fluid" alt="Nuestros Servicios" style="border-radius: 10px;">
+        </div>
+    </div>
+    <!-- Services -->
+    <div class="row">
+        <!-- Service 1: Construcción de Viviendas -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Construcción y Dirección de Obra</h3>
+                    <p class="card-text">
+                        Diseñamos y construimos casas que se adaptan a tu estilo de vida. Trabajamos en forma personalizada para crear el hogar de tus sueños, combinando funcionalidad, estética y sostenibilidad.
+                    </p>
+                    <ul class="list-unstyled">
+
+                    <style>
+                        .text-dark-red {
+                            color: #8B0000; /* Dark red color */
+                        }
+                        </style>
+                        
+                        <li><i class="fas fa-check text-dark-red"></i> Asesoramiento personalizado</li>
+                        <li><i class="fas fa-check text-dark-red"></i> Procesos transparentes</li>
+                        <li><i class="fas fa-check text-dark-red"></i> Soporte continuo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Service 2: Servicios de Alquiler -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Servicios de Venta y Alquiler</h3>
+                    <p class="card-text">
+                        Ofrecemos una amplia variedad de propiedades en venta y alquiler para satisfacer tus necesidades. Ya sea que busques un departamento en la ciudad o una casa en en un country, te ayudamos a encontrar la mejor opción.
+                    </p>
+                    <ul class="list-unstyled">        
+                        <style>
+                            .text-dark-red {
+                                color: #8B0000; /* Dark red color */
+                            }
+                            </style>
+                            
+                            <li><i class="fas fa-check text-dark-red"></i> Asesoramiento personalizado</li>
+                            <li><i class="fas fa-check text-dark-red"></i> Procesos transparentes</li>
+                            <li><i class="fas fa-check text-dark-red"></i> Soporte continuo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Why Choose Us Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-5">¿Por Qué Elegirnos?</h2>
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <h4>Experiencia Profesional</h4>
+            <p>Más de 30 años en el mercado nos respaldan como líderes en construcción y servicios inmobiliarios.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <h4>Compromiso con el Cliente</h4>
+            <p>Nuestro objetivo es superar tus expectativas ofreciendo soluciones a medida y un servicio excepcional.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <h4>Calidad Garantizada</h4>
+            <p>Utilizamos materiales de primera y contamos con un equipo altamente calificado para garantizar resultados de excelencia.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

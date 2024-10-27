@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Portfolio - Proyecto + Hogar{% endblock %}
+
+{% block content %}
+
+{% load static %}
+<div class="container mt-5">
+    <h1 class="text-center">Nuestros Proyectos</h1>
+    <div class="row mt-4">
+        <!-- Project 1 -->
+        <div class="row-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/image1.jpg' %}" class="card-img-top" alt="Proyecto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 1</h5>
+                    <p class="card-text">Descripción breve del proyecto.</p>
+                    <a href="#" class="btn btn-primary">Ver Más</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="row-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/image2.jpg' %}" class="card-img-top" alt="Proyecto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 2</h5>
+                    <p class="card-text">Descripción breve del proyecto.</p>
+                    <a href="#" class="btn btn-primary">Ver Más</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="row-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/image3.jpg' %}" class="card-img-top" alt="Proyecto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 3</h5>
+                    <p class="card-text">Descripción breve del proyecto.</p>
+                    <a href="#" class="btn btn-primary">Ver Más</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</div>
+{% endblock %}

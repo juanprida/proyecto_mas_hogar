@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Sobre Nosotros - Proyecto + Hogar{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2 class="mb-4">Nuestra Historia</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-20">
+            <p>
+                <strong>Proyecto + Hogar</strong> es un estudio de arquitectura y desarrollo inmobiliario con sede en Buenos Aires. Desde nuestros inicios en los años 80, nos hemos dedicado a crear espacios funcionales y de alta calidad en los sectores de la <strong>construcción residencial, industrial</strong> y de <strong>edificios</strong>. A lo largo de más de tres décadas, hemos combinado nuestra <strong>experiencia en arquitectura</strong> con un servicio <strong>personalizado</strong> y cercano, adaptando cada proyecto a su contexto y a las necesidades de nuestros clientes.
+            </p>
+            
+            <p>
+                La oficina fue fundada por <strong>Juan Carlos Prida</strong> y <strong>Gabriela Ventresca</strong>, un equipo de arquitectos que comenzó su trayectoria con el objetivo de mejorar la vida de las personas a través de la creación y renovación de <strong>viviendas</strong> en la ciudad y la provincia de Buenos Aires. Con el tiempo, nuestro enfoque se amplió hacia proyectos <strong>industriales</strong> y de mayor escala, siempre con una búsqueda constante de <strong>optimización del espacio</strong>.
+            </p>
+            
+            <p>
+                En <strong>2011</strong>, <strong>Gabriela</strong> tomó la iniciativa de expandir el negocio familiar al incursionar en el <strong>mercado inmobiliario</strong>, integrando así la oferta de servicios con la <strong>compra, venta y alquiler</strong> de propiedades. Este enfoque <strong>multidisciplinario</strong> nos permite acompañar a nuestros clientes en todas las etapas de su proyecto, desde la concepción arquitectónica hasta la concreción inmobiliaria.
+            </p>
+            
+            <p>
+                Hoy, con más de <strong>30 años de experiencia</strong>, seguimos operando como una <strong>empresa familiar</strong> que prioriza el <strong>compromiso</strong>, la <strong>dedicación</strong> y una estrecha relación con nuestros clientes. En <strong>Proyecto + Hogar</strong>, trabajamos con la satisfacción de saber que, a través de cada proyecto, contribuimos a mejorar la calidad de vida de quienes confían en nosotros.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Team Members Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-5">Nuestro Equipo</h2>
+    <div class="row justify-content-between align-items-start">
+        <!-- Team Member 1: Juan Carlos Prida -->
+        <div class="col-md-5 text-center mb-4" style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+            <img src="{% static 'images/team_member1.jpg' %}" class="rounded-circle mb-3" alt="Arq. Juan Carlos Prida" width="150" height="150">
+            <h5>Arq. Juan Carlos Prida</h5>
+            <p>Socio Fundador</p>
+            <p class="small-bio" style="line-height: 1.6; font-size: 1rem;">
+                Con más de 37 años de experiencia, Juan Carlos ha liderado más de 250 proyectos en arquitectura residencial, comercial e industrial. También es <strong>Profesor Adjunto</strong> en la <strong>Universidad de Buenos Aires</strong> desde 1984.
+            </p>
+        </div>
+
+        <!-- Team Member 2: Gabriela Ventresca -->
+        <div class="col-md-5 text-center mb-4" style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+            <img src="{% static 'images/team_member2.jpg' %}" class="rounded-circle mb-3" alt="Arq. Gabriela Ventresca" width="150" height="150">
+            <h5>Arq. Gabriela Ventresca</h5>
+            <p>Socia Fundadora</p>
+            <p class="small-bio" style="line-height: 1.6; font-size: 1rem;">
+                Con más de 23 años de experiencia, Gabriela lidera la gestión de proyectos y comercialización de propiedades en CABA y diversas localidades. Se especializa en <strong>inversiones inmobiliarias</strong> y gestión con clientes y proveedores.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
