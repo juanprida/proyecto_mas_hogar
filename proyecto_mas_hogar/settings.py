@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-oqmp$5dy(8saea@xoqpe86j66t^d4vzv4vvu01f^==k&64a^xe
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['proyectomashogar.com', 'www.proyectomashogar.com']
+ALLOWED_HOSTS = ['proyecto-mas-hogar.herokuapp.com', 'www.proyectomashogar.com', 'proyectomashogar.com']
 
 
 
