@@ -26,14 +26,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-oqmp$5dy(8saea@xoqpe86j66t^d4vzv4vvu01f^==k&64a^xe"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['proyecto-mas-hogar-e3cc6b1e98ac.herokuapp.com', 'www.proyectomashogar.com', 'proyectomashogar.com']
 
 
-
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
