@@ -11,7 +11,7 @@
             <a href="{% url 'project_detail' project.id %}">
                 {% if project.images.first %}
                 <!-- Use Cloudinary to generate a thumbnail dynamically -->
-                <img src="{{ project.images.first.image|cloudinary_thumbnail }}" class="img-fluid rounded-corners" alt="{{ project.title }}">
+                <img src="{{ project.images.first.image.url|cloudinary_thumbnail }}" class="img-fluid rounded-corners" alt="{{ project.title }}">
                 {% else %}
                 <!-- Fallback if no image is available -->
                 <img src="{% static 'images/placeholder.png' %}" class="img-fluid rounded-corners" alt="No Image Available">
