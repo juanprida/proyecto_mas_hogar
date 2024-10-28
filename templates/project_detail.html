@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
-{% load cloudinary %}
+
+{% load cloudinary_filters %}
 {% block title %}{{ project.title }} - Proyecto + Hogar{% endblock %}
 {% block content %}
 <div class="container my-5">
@@ -10,7 +11,8 @@
     <div class="row">
         {% for image in project.images.all %}
         <div class="col-md-4 mb-4">
-            {% cloudinary image.image width=300 height=300 crop="fill" class="img-fluid rounded-corners" alt=project.title %}
+            <!-- Use Cloudinary to generate a thumbnail dynamically -->
+            <img src="{{ image.image.url|cloudinary_thumbnail }}" class="img-fluid rounded-corners" alt="{{ project.title }}">
         </div>
         {% endfor %}
     </div>
