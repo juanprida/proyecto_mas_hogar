@@ -6,9 +6,9 @@ register = template.Library()
 @register.filter(name='cloudinary_thumbnail')
 def cloudinary_thumbnail(image_url):
     options = {
-        'crop': 'fill',
-        'width': 400,
-        'height': 400,
+        'crop': 'thumb',
+        'width': 300,
+        'height': 300,
         'format': 'jpg',
         'quality': 'auto'
     }
